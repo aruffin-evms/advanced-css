@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image transition on scroll</title>
+  <style>
+    /* body {
+      perspective: 1000px;
+      max-width:600px;
+    } */
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .content {
+      height: 100vh;
+    }
+
+    .hero {
+      height: 100%;
+      /* background-color: gray; */
+
+
+      /* position: absolute; */
+    }
+
+    .hero__container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .hero__image__container {
+      perspective: 1000px;
+      /* width: 100vw; */
+    }
+
+    .hero__image {
+      margin: 20px;
+      width: 1000px;
+      height: auto;
+      min-height: 700px;
+      border-left: 20px solid transparent;
+      transform: rotateY(-210deg);
+      transform-style: preserve-3d;
+      background:
+        linear-gradient(to bottom left, transparent 50%,#fff 52%) 10px 100%/10px 7px, linear-gradient(to top left, transparent 100%, red 52%) 10px 0 /8px 3px, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 10px 0 /8px 100%, linear-gradient(#fff, #fff) 0 0 /10px 100%,
+        /* Main background */
+        url(../assets/zane-lee-HuyoZSaBrzw-unsplash.jpg) 0 0/cover;
+      background-repeat: no-repeat;
+      position: relative;
+      left: 0;
+      top: 20%;
+      /* float: right; */
+    }
+
+    .image-example-one {
+      height: 100%;
+      background-color: green;
+    }
+
+    .image-example-one p {
+      font-size: 170px;
+      color: #fafafa;
+      text-align: center;
+    }
+
+    .image-example-two {
+      height: 100%;
+      background-color: cornflowerblue;
+    }
+
+    .image-example-two p {
+      font-size: 170px;
+      color: #fafafa;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .image-example-three {
+      height: 100%;
+      background-color: goldenrod;
+    }
+
+    .image-example-three p {
+      font-size: 170px;
+      color: #fafafa;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="content">
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__image__container">
+          <figure class="hero__image">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="image-example-one">
+      <p>Section 1</p>
+    </section>
+    <section class="image-example-two">
+      <p>Section 2</p>
+    </section>
+    <section class="image-example-three">
+      <p>Section 3</p>
+    </section>
+  </main>
+  <script>
+
+  </script>
+</body>
+
+</html>
