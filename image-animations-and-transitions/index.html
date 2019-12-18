@@ -40,20 +40,32 @@
 
     .hero__image {
       margin: 20px;
-      width: 1000px;
-      height: auto;
-      min-height: 700px;
-      border-left: 20px solid transparent;
-      transform: rotateY(-210deg);
+      width:800px;
+      height:500px;
+      border-left:20px solid transparent;
+      transform: rotateY(-215deg);
       transform-style: preserve-3d;
       background:
-        linear-gradient(to bottom left, transparent 50%,#fff 52%) 10px 100%/10px 7px, linear-gradient(to top left, transparent 100%, red 52%) 10px 0 /8px 3px, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 10px 0 /8px 100%, linear-gradient(#fff, #fff) 0 0 /10px 100%,
-        /* Main background */
-        url(../assets/zane-lee-HuyoZSaBrzw-unsplash.jpg) 0 0/cover;
+      /*
+        1: The bottom shadow
+        2: A small triangle at the bottom left corner for the 3D effect
+        3: A small triangle at the top    left corner for the 3D effect
+        4: The left side shadow
+        5: White color to create the separation between each part
+      */
+      
+      /* First part */
+      /* linear-gradient(24deg,transparent 54%,#aaa 57%) 0px 100%/30px 16px border-box border-box, */
+      linear-gradient(to bottom left,transparent 50%,#fff 52%) 10px 100%/12px 6px,
+      linear-gradient(to top left,transparent 50%,#fff 52%) 10px 0 /8px 3px,
+      linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 10px 0 /8px 100%,
+      linear-gradient(#fff,#fff) 0 0 /10px 100%,
+      /* Main background */
+      url(../assets/zane-lee-HuyoZSaBrzw-unsplash.jpg) 0 0/cover;
       background-repeat: no-repeat;
       position: relative;
       left: 0;
-      top: 20%;
+      top: 10%;
       /* float: right; */
     }
 
